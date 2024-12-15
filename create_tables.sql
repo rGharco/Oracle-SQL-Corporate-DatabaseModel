@@ -1,3 +1,40 @@
+DROP SEQUENCE clients_sequence;
+DROP SEQUENCE promotions_sequence;
+DROP SEQUENCE client_promotions_sequence;
+DROP SEQUENCE departments_sequence;
+DROP SEQUENCE tickets_sequence;
+DROP SEQUENCE client_reviews_sequence;
+DROP SEQUENCE employee_roles_sequence;
+DROP SEQUENCE staff_sequence;
+DROP SEQUENCE staff_schedules_sequence;
+DROP SEQUENCE support_staff_sequence;
+DROP SEQUENCE ticket_status_sequence;
+DROP TABLE CLIENTS CASCADE CONSTRAINT;
+DROP TABLE PROMOTIONS CASCADE CONSTRAINT;
+DROP TABLE DEPARTMENTS CASCADE CONSTRAINT;
+DROP TABLE TICKETS CASCADE CONSTRAINT;
+DROP TABLE CLIENT_REVIEWS CASCADE CONSTRAINT;
+DROP TABLE EMPLOYEE_ROLES CASCADE CONSTRAINT;
+DROP TABLE STAFF CASCADE CONSTRAINT;
+DROP TABLE STAFF_SCHEDULES CASCADE CONSTRAINT;
+DROP TABLE TICKET_STATUS CASCADE CONSTRAINT;
+DROP TABLE SUPPORT_STAFF CASCADE CONSTRAINT;
+DROP TABLE CLIENT_PROMOTIONS CASCADE CONSTRAINT;
+
+
+CREATE SEQUENCE clients_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE promotions_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE client_promotions_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE departments_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE tickets_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE client_reviews_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE employee_roles_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE staff_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE staff_schedules_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE support_staff_sequence START WITH 1 INCREMENT BY 1;
+CREATE SEQUENCE ticket_status_sequence START WITH 1 INCREMENT BY 1;
+
+
 CREATE TABLE Clients 
 (
     client_id NUMBER PRIMARY KEY,
@@ -20,11 +57,10 @@ CREATE TABLE Promotions
 CREATE TABLE Client_Promotions 
 (
     client_id NUMBER,
-    promotion_id NUMBER PRIMARY KEY,
+    promotion_id NUMBER,
     promotion_start_date DATE NOT NULL,
     promotion_end_date DATE NOT NULL,
     CONSTRAINT pk_client_promotions PRIMARY KEY (client_id, promotion_id),
-    REFERENCES Promotions (promotion_id),
     CONSTRAINT fk_client_promotions_client_id FOREIGN KEY (client_id)
     REFERENCES Clients (client_id),
     CONSTRAINT fk_client_promotions_promotion_id FOREIGN KEY (promotion_id)
@@ -117,5 +153,3 @@ CREATE TABLE Ticket_Status
     CONSTRAINT fk_ticket_id FOREIGN KEY (ticket_id)
     REFERENCES Tickets (ticket_id)
 )
-
-
