@@ -105,14 +105,14 @@ CREATE TABLE Client_Reviews
 CREATE TABLE Employee_Roles 
 (
     role_id NUMBER PRIMARY KEY,
-    role_name VARCHAR2(20)
+    role_name VARCHAR2(35)
 );
 
 CREATE TABLE Staff 
 (
     staff_id NUMBER PRIMARY KEY,
     staff_name VARCHAR2(20) NOT NULL,
-    staff_email VARCHAR2(20),
+    staff_email VARCHAR2(30),
     staff_role NUMBER,
     department_id NUMBER,
     CONSTRAINT fk_staff_department_id FOREIGN KEY (department_id)
