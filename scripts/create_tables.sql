@@ -49,7 +49,7 @@ CREATE TABLE Clients
 CREATE TABLE Promotions 
 (
     promotion_id NUMBER PRIMARY KEY,
-    promotion_name VARCHAR2(20) NOT NULL,
+    promotion_name VARCHAR2(30) NOT NULL,
     promotion_percentage NUMBER,
     CHECK (promotion_percentage BETWEEN 5 AND 100)
 );
