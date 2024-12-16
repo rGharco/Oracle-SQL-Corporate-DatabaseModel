@@ -148,7 +148,7 @@ CREATE TABLE Ticket_Status
 (
     ticket_status_id NUMBER PRIMARY KEY,
     ticket_id NUMBER,
-    status_description varchar2(10),
+    status_description varchar2(25),
     assigned_staff_id NUMBER,
     CONSTRAINT fk_ticket_id FOREIGN KEY (ticket_id)
     REFERENCES Tickets (ticket_id)
