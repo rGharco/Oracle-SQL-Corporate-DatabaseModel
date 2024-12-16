@@ -33,7 +33,7 @@ VALUES (Clients_sequence.NEXTVAL, 'David Lee', 'p@ssw0rd789', 'uniqsalt9876', 'd
 INSERT INTO Clients (client_id, client_name, client_password, client_password_salt, client_email, client_birthday, client_has_promotion)
 VALUES (Clients_sequence.NEXTVAL, 'Eva Roberts', 'passwordEva123', 'salt12345', 'eva.roberts@example.com', TO_DATE('1993-12-05', 'YYYY-MM-DD'), 1);
 INSERT INTO Clients (client_id, client_name, client_password, client_password_salt, client_email, client_birthday, client_has_promotion)
-VALUES (Clients_sequence.NEXTVAL, 'Franklin Harris', 'mypassword1234', 'saltvalue123', 'franklin.harris@example.com', TO_DATE('1988-02-17', 'YYYY-MM-DD'), 1);
+VALUES (Clients_sequence.NEXTVAL, 'Franklin Harris', 'mypassword1234', 'saltvalue123', 'franklinharis@example.com', TO_DATE('1988-02-17', 'YYYY-MM-DD'), 1);
 INSERT INTO Clients (client_id, client_name, client_password, client_password_salt, client_email, client_birthday, client_has_promotion)
 VALUES (Clients_sequence.NEXTVAL, 'Grace King', 'grace@password567', 'kingsalt4567', 'grace.king@example.com', TO_DATE('1992-11-08', 'YYYY-MM-DD'), 0);
 INSERT INTO Clients (client_id, client_name, client_password, client_password_salt, client_email, client_birthday, client_has_promotion)
@@ -97,7 +97,7 @@ VALUES (departments_sequence.NEXTVAL, 'Legal');
 INSERT INTO Departments (department_id, department_name)
 VALUES (departments_sequence.NEXTVAL, 'Logistics');
 INSERT INTO Departments (department_id, department_name)
-VALUES (departments_sequence.NEXTVAL, 'R&D');
+VALUES (departments_sequence.NEXTVAL, 'R and D');
 
 /*EMPLOYEE ROLES*/
 INSERT INTO Employee_Roles (role_id, role_name)
@@ -340,5 +340,3 @@ INSERT INTO Ticket_Status (ticket_status_id, ticket_id, status_description, assi
 VALUES (ticket_status_sequence.NEXTVAL, 14, 'In Progress', 10);
 INSERT INTO Ticket_Status (ticket_status_id, ticket_id, status_description, assigned_staff_id)
 VALUES (ticket_status_sequence.NEXTVAL, 15, 'Open', 4);
-
-
