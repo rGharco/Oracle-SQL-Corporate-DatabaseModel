@@ -1,4 +1,5 @@
 DROP SEQUENCE clients_sequence;
+DROP SEQUENCE clients_auth_sequence;
 DROP SEQUENCE promotions_sequence;
 DROP SEQUENCE client_promotions_sequence;
 DROP SEQUENCE departments_sequence;
@@ -7,6 +8,7 @@ DROP SEQUENCE client_reviews_sequence;
 DROP SEQUENCE employee_roles_sequence;
 DROP SEQUENCE employee_sequence;
 DROP SEQUENCE ticket_status_sequence;
+DROP SEQUENCE ticket_status_types_sequence;
 DROP TABLE Tickets CASCADE CONSTRAINTS;
 DROP TABLE Ticket_Status CASCADE CONSTRAINTS;
 DROP TABLE Ticket_Status_Types CASCADE CONSTRAINTS;
@@ -120,4 +122,3 @@ CREATE TABLE client_reviews (
     FOREIGN KEY (client_id) REFERENCES Clients(client_id),
     FOREIGN KEY (ticket_id) REFERENCES Tickets(ticket_id)
 );
-
