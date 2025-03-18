@@ -480,6 +480,56 @@ INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_revie
 INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
 (client_reviews_sequence.NEXTVAL, 13, 13, 1, 'Very poor response time.', DATE '2024-02-08');
 INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 1, 16, 3, 'Satisfactory service, but slow response.', DATE '2024-06-10');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 2, 17, 5, 'Excellent customer support!', DATE '2024-06-15');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 3, 18, 2, 'Unresolved issue, not satisfied.', DATE '2024-06-20');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 4, 19, 4, 'Helpful and polite staff.', DATE '2024-07-05');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 5, 20, 3, 'Decent support, but could improve.', DATE '2024-07-10');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 6, 21, 1, 'Very poor experience, no resolution.', DATE '2024-07-15');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 7, 22, 5, 'Fast and reliable service.', DATE '2024-07-20');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 8, 23, 4, 'Good but a bit delayed.', DATE '2024-07-25');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 9, 24, 3, 'Average response time.', DATE '2024-08-01');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 10, 25, 2, 'Had to escalate the issue.', DATE '2024-08-05');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 11, 26, 5, 'Very professional support.', DATE '2024-08-10');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 12, 27, 4, 'Quick solution, but lacking communication.', DATE '2024-08-15');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 13, 28, 1, 'Disappointed, not helpful at all.', DATE '2024-08-20');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 14, 29, 5, 'Highly satisfied with the support!', DATE '2024-08-25');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 15, 30, 3, 'Decent support, room for improvement.', DATE '2024-09-01');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 16, 31, 4, 'Nice experience overall.', DATE '2024-09-05');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 17, 32, 2, 'Slow and unhelpful.', DATE '2024-09-10');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 18, 33, 1, 'Unacceptable delay in response.', DATE '2024-09-15');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 19, 34, 5, 'Perfect experience!', DATE '2024-09-20');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 20, 35, 3, 'Service was okay, but not great.', DATE '2024-09-25');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 21, 36, 4, 'Helpful staff, would use again.', DATE '2024-10-01');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 22, 37, 5, 'Amazing, quick resolution.', DATE '2024-10-05');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 23, 38, 3, 'Okay service, but expected better.', DATE '2024-10-10');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 24, 39, 2, 'Long wait times, not great.', DATE '2024-10-15');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
+(client_reviews_sequence.NEXTVAL, 25, 40, 4, 'Good response time, decent support.', DATE '2024-10-20');
+INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
 (client_reviews_sequence.NEXTVAL, 14, 14, 5, 'Superb experience, would recommend!', DATE '2024-04-19');
 INSERT INTO client_reviews (client_review_id, client_id, ticket_id, client_review_rating, feedback_text, feedback_date) VALUES
 (client_reviews_sequence.NEXTVAL, 15, 15, 4, 'Minor issues but resolved quickly.', DATE '2024-05-23');
