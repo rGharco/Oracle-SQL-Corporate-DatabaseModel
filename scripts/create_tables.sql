@@ -80,6 +80,7 @@ CREATE TABLE Employees (
     email VARCHAR2(255) NOT NULL,
     role_id NUMBER,
     department_id NUMBER,
+    salary NUMBER,
     hire_date DATE,
     FOREIGN KEY (role_id) REFERENCES Employee_Role(role_id),
     FOREIGN KEY (department_id) REFERENCES Departments(department_id)
