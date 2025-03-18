@@ -300,18 +300,18 @@ INSERT INTO Employee_Role (role_id, role_name) VALUES
 
 
 -- Insert data into Employees
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Michael Johnson', 'michael@example.com', 1, 1, DATE '2020-06-01');
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Sarah Williams', 'sarah@example.com', 2, 2, DATE '2021-04-15');
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Daniel Brown', 'daniel@example.com', 3, 3, DATE '2022-08-10');
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Tom Holland', 'tom@example.com', 1, 4, DATE '2022-02-15');
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Leon Xing', 'leon@example.com', 2, 5, DATE '2021-09-05');
-INSERT INTO Employees (employee_id, name, email, role_id, department_id, hire_date) VALUES
-(employee_sequence.NEXTVAL, 'Kim Goha', 'kin@example.com', 3, 1, DATE '2022-07-11');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id,salary,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Michael Johnson', 'michael@example.com', 1, 1,3200,DATE '2020-06-01');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id, salary,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Sarah Williams', 'sarah@example.com', 2, 2,4000, DATE '2021-04-15');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id, salary,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Daniel Brown', 'daniel@example.com', 3, 3, 4400,DATE '2022-08-10');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id,salary ,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Tom Holland', 'tom@example.com', 1, 4,3800, DATE '2022-02-15');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id,salary ,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Leon Xing', 'leon@example.com', 2, 5,2780, DATE '2021-09-05');
+INSERT INTO Employees (employee_id, name, email, role_id, department_id,salary ,hire_date) VALUES
+(employee_sequence.NEXTVAL, 'Kim Goha', 'kin@example.com', 3, 1,5000, DATE '2022-07-11');
 
 -- Insert data into Ticket_Status
 INSERT INTO Ticket_Status (status_id, ticket_id, status_type, assigned_staff_id, status_timestamp) VALUES
