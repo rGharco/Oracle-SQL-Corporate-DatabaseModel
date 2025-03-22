@@ -444,7 +444,11 @@ INSERT INTO Promotions (promotion_id, promotion_name, reduction_percentage, prom
 INSERT INTO Promotions (promotion_id, promotion_name, reduction_percentage, promotion_start_date, promotion_end_date) VALUES
 (promotions_sequence.NEXTVAL, 'Black Friday', 20, DATE '2024-11-25', DATE '2024-11-29');
 INSERT INTO Promotions (promotion_id, promotion_name, reduction_percentage, promotion_start_date, promotion_end_date) VALUES
-(promotions_sequence.NEXTVAL, 'Client Fidelity', 10,NULL,NULL);
+(promotions_sequence.NEXTVAL, 'Client Fidelity - 1 Year', 10,NULL,NULL);
+INSERT INTO Promotions (promotion_id, promotion_name, reduction_percentage, promotion_start_date, promotion_end_date) VALUES
+(promotions_sequence.NEXTVAL, 'Client Fidelity - 3 Years', 15,NULL,NULL);
+INSERT INTO Promotions (promotion_id, promotion_name, reduction_percentage, promotion_start_date, promotion_end_date) VALUES
+(promotions_sequence.NEXTVAL, 'Client Fidelity - 5 Years', 20,NULL,NULL);
 
 -- Insert data into client_promotions
 INSERT INTO client_promotions (client_id, promotion_id) VALUES
