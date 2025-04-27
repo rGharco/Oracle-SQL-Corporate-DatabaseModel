@@ -36,7 +36,7 @@ CREATE SEQUENCE ticket_status_types_sequence START WITH 1 INCREMENT BY 1;
 CREATE TABLE Clients (
     client_id NUMBER PRIMARY KEY,
     client_name VARCHAR2(255) NOT NULL,
-    client_email VARCHAR2(255) NOT NULL,
+    client_email VARCHAR2(255) NOT NULL UNIQUE,
     client_registration_date DATE,
     client_birthday DATE
 );
