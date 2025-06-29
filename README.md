@@ -1,19 +1,31 @@
-# OVERVIEW
-A database model meant to replicate the a corporate environemnt where a ticketing system takes place and promotions for clients are also available. 
+# 🚀 Overview  
+This database model is designed to simulate a **corporate environment** featuring a  **ticketing system** alongside  **client promotions**.  
+It represents the **foundational schema** covering the essential elements common to such systems and serves as a **starting point** for further development and customization.
 
-It represent the bare minimum of any database and should be used to save time and develop on top of it
+---
 
-# DATABASE DESIGN
-As for now, it is my first project where I had to design a database and thus it is far from perfect.
+# 🗂️ Database Design  
+This is my **first database design project**, so the model is not fully optimized yet.  
+However, it provides a **solid base** that can be easily extended or refined.  
 
-However it can easily be worked on top and saves some time. The design includes useful tables and for a better and clearer view, make sure to take a look at the diagram pdf as it has a much prettier format and makes it easy to follow along.
+For a clearer understanding, please check the **diagram PDF**  which presents the schema in a more visually organized and accessible format.
 
-# HOW TO USE
-Simply run the scripts, firstly the one to create the tables and then the inserts, or if used for production , leave that to be done by the web application or software in place.
+---
 
-! Rememeber that the create_tables script will delete tables that use the same name as the one assigned for this schema, so if you have other tables called (e.g Clients) it will delete them. Proceed with caution!
+# ⚙️ How to Use  
+1. Run the script to **create the tables**.  
+2. Run the script to **insert sample data**.  
 
-# SOFTWARE AND SQL LANGUAGE
-Software: SQL DEVELOPER
+❗ **Warning:**  
+The `create_tables` script will **drop any existing tables** with the same names (e.g., `Clients`) before creating new ones.  
+**Make sure to back up any important data before proceeding!**
 
-SQL LANGUAGE: Oracle SQL
+---
+
+# 💻 Software & SQL Language  
+- **Software:** Oracle SQL Developer  
+- **SQL Dialect:** Oracle SQL  
+
+---
+
+Feel free to build on top of this model and customize it according to your needs!  
